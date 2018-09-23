@@ -1,0 +1,134 @@
+#kontener {
+  width: 1000px;
+  margin: 0 auto;
+  }
+
+#naglowek {
+  background-color: #2C6700;
+  color: #000;
+  min-height: 70px;
+  }
+
+#nawigacja {
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 20px;
+    margin-top: 10px;
+}
+
+#nawigacja > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nawigacja > ul > li {
+    display: inline-block;
+}
+
+#nawigacja a {
+
+    color: #000;
+    text-decoration:cen;
+    background-color: #22CD00;
+    padding: 5px;
+    margin-right: 5px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition: background-color 1s, color 1s; /* Safari */
+    transition: background-color 1s, color 1s;
+    border: 2px solid #009933;
+}
+
+#nawigacja a:hover {
+    color: #E4FF1A;
+    background-color: #2C6700;
+}
+
+#srodek {
+  width: 980px;
+  min-height: 400px;
+  background-color: #CCCC99;
+  margin-top: 10px;
+  padding: 10px;
+  }
+
+#stopka {
+  height: 20px;
+  width: 1000px;
+  background-color: #FF9900;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+  }
+
+.autor{
+      font-size: 35px;
+      font-weight: bold;
+      color: #DDDDDD;
+      text-align: center;
+  }
+.grupa{
+      font-size: 20px;
+      font-weight: bold;
+      color: #DDDDDD;
+      text-align: center;
+    }
+
+.kanion{
+  float: left;
+  margin: 10px;
+  border: 2px solid #009933;
+  padding: 3px 3px 0px 3px;
+}
+
+.kanion2{
+  float: right;
+  margin: 10px;
+  border: 2px solid #009933;
+  padding: 3px 3px 0px 3px;
+}
+
+.text1{
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+ul {
+  list-style-image: url(lista.png);
+}
+#tabela1 table{
+  table-layout: fixed;
+  width: 100%;
+  align: center;
+
+}
+
+#tabela1 td {
+  border-bottom: 3px dotted green;
+  padding: 5px;
+  text-align: center;
+}
+
+#tabela1 th {
+  border-bottom: 3px dotted green;
+  padding: 5px;
+  background-color: green;
+}
+
+#tabela2 table{
+  table-layout: fixed;
+  width: 100%;
+  align: center;
+}
+
+#tabela2 td {
+  border-bottom: 3px dotted green;
+  padding: 5px;
+  text-align: center;
+}
+
+#tabela2 th {
+  border-bottom: 3px dotted green;
+  padding: 5px;
+}

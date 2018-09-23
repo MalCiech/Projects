@@ -1,0 +1,125 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Strona Główna - Zadanie 02</title>
+  <meta name="description" content="Wstęp do Internetu - Zadanie 02">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Małgorzata Ciechanowska">
+  <meta charset=”UTF-8”>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="pudlo">
+          <header class="oldtimer">
+              <div class="oldtext">
+                    Oldtimer Club
+              </div>
+              <div class="obrazek">
+                    <img src="Pictures/LOGO.jpg" alt="auto" width="310">
+              </div>
+          </header>
+
+    <nav class="menu">
+          <table>
+              <tr>
+                  <td class="gora">
+                  <ul>
+                      <li><a href="index.html"><p1>Główna</p1></a></li>
+                      <li><a href="index.html"><p1>Giełda</p1></a></li>
+                  </ul>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="dol">
+                  <ul>
+                  <li><a href="index.html"><p1>Kontakt</p1></a></li>
+                  </ul>
+              </td>
+              </tr>
+
+          </table>
+    </nav>
+
+  <section class="form">
+
+  <form method="post" action="http://info.wsisiz.edu.pl/~zawadzkp/skrypt.php" method="post">
+
+    <table>
+      <tr>
+        <th colspan="2">Formularz dodawania ogłoszenia</th>
+      </tr>
+      <tr>
+        <td>Marka</td>
+        <td>
+          <input type="text" name="marka" required />
+        </td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td>
+          <input type="text" name="model" required />
+        </td>
+      </tr>
+      <tr>
+        <td>Rok</td>
+        <td>
+          <input type="number" name="rok" required />
+        </td>
+      </tr>
+      <tr>
+        <td>Silnik</td>
+        <td>
+          <input type="radio" name="silnik" value="benzyna" checked> Benzyna<br>
+          <input type="radio" name="silnik" value="diesel"> Diesel
+        </td>
+      </tr>
+      <tr>
+        <td>Wyposażenie</td>
+        <td>
+          <input type="checkbox" name="wyposazenie[]" value="klimatyzacja" /> Klimatyzacja<br/>
+          <input type="checkbox" name="wyposazenie[]" value="abs" /> ABS<br/>
+          <input type="checkbox" name="wyposazenie[]" value="wspomaganie_kierownicy" /> Wspomaganie kierownicy
+        </td>
+      </tr>
+      <tr>
+        <td>Stan ogólny</td>
+        <td>
+          <select name="stan_ogolny">
+                      <option value="zly">Zły</option>
+                      <option value="sredni">Średni</option>
+                      <option value="dobry" selected>Dobry</option>
+                      <option value="bardzo_dobry">Bardzo dobry</option>
+                      <option value="idealny">Idealny</option>
+                  </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Opis</td>
+        <td>
+          <textarea name="opis" cols="50" rows="5"></textarea>
+        </td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <button type="submit" name="potwierdz" value="Potwierdź">Potwierdź</button>
+          <button type="reset" name="reset" value="Reset">Reset</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</section>
+
+
+</body>
+
+</html>
