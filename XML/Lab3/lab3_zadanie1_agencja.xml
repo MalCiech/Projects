@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE dokument_agencji [
+    <!ELEMENT dokument_agencji (umowa,tabela_p,termin_umowy,zobowiazanie,tabela_d,prowizja,oswiadczenie,agent_prowadzacy,podpis)>
+        <!ELEMENT umowa (numer, zawarcie_umowy)>
+            <!ELEMENT numer (#PCDATA)>
+            <!ELEMENT zawarcie_umowy (miejscowosc+, data)>
+                <!ELEMENT miejscowosc (#PCDATA)>
+                <!ELEMENT data (#PCDATA)>
+        <!ELEMENT tabela_p (agencja+,poszukujacy)>
+            <!ELEMENT agencja (nazwa_agencji?,adres?,nip?,regon?,imie?,nazwisko?)>
+                <!ELEMENT nazwa_agencji (#PCDATA)>
+                <!ELEMENT adres (miejscowosc,ulica+,kod+,nr_domu+,nr_lokalu?)>
+                    <!ELEMENT ulica (#PCDATA)>
+                    <!ELEMENT kod (#PCDATA)>
+                    <!ELEMENT nr_domu (#PCDATA)>
+                    <!ELEMENT nr_lokalu (#PCDATA)>
+                <!ELEMENT nip (#PCDATA)>
+                <!ELEMENT regon (#PCDATA)>
+                <!ELEMENT imie (#PCDATA)>
+                <!ELEMENT nazwisko (#PCDATA)> 
+            <!ELEMENT poszukujacy (dane_osobowe,adres,pesel,dowod)>
+                <!ELEMENT dane_osobowe (imie, nazwisko)>   
+                <!ELEMENT pesel (#PCDATA)>
+                <!ELEMENT dowod (seria,nr_serii)>
+                    <!ELEMENT seria (#PCDATA)>
+                    <!ELEMENT nr_serii (#PCDATA)>
+        <!ELEMENT termin_umowy (termin_zawarcia,termin_zakonczenia)>
+            <!ELEMENT termin_zawarcia (#PCDATA)>
+            <!ELEMENT termin_zakonczenia (#PCDATA)>
+        <!ELEMENT zobowiazanie (#PCDATA)>  
+        <!ELEMENT tabela_d (lp+)>
+            <!ELEMENT lp (nieruchomosc+,adres_nieruchomosci+)>
+                <!ATTLIST lp nr CDATA #REQUIRED>
+                <!ELEMENT nieruchomosc (#PCDATA)>
+                <!ELEMENT adres_nieruchomosci (#PCDATA)>
+        <!ELEMENT prowizja (procent)>
+            <!ELEMENT procent (#PCDATA)>
+        <!ELEMENT oswiadczenie (#PCDATA)>
+        <!ELEMENT agent_prowadzacy (imie,nazwisko,telefon)>
+            <!ELEMENT telefon (#PCDATA)>
+        <!ELEMENT podpis (agencja,kupujacy)>
+            <!ELEMENT kupujacy (imie,nazwisko)>
+          
+            
+]>
+
+
+<dokument_agencji>
+    <umowa>
+        <numer> 5676 </numer>
+        <zawarcie_umowy>
+            <miejscowosc> Warszawa </miejscowosc>
+            <data>2014-10-01</data>       
+        </zawarcie_umowy>  
+    </umowa>
+    <tabela_p>
+        <agencja>                 
+            <nazwa_agencji> Stołeczne Centrum Nieruchomości</nazwa_agencji>
+            <adres>
+                <miejscowosc> Warszawa </miejscowosc>
+                <ulica>ul. Okopowa </ulica>
+                <kod>01-042</kod>
+                <nr_domu>56</nr_domu>
+            </adres>
+            <nip>723-230-21-03</nip>
+            <regon> 567382911</regon>
+        </agencja>
+        <poszukujacy>
+             <dane_osobowe>
+                     <imie> Mirosław </imie>
+                     <nazwisko> Strzaliński</nazwisko>
+             </dane_osobowe>
+             <adres>
+                <miejscowosc> Radzymin </miejscowosc>
+                <ulica> ul. Kościelna </ulica>
+                <kod>05-250</kod>
+                <nr_domu>12</nr_domu>
+                <nr_lokalu>4</nr_lokalu>
+            </adres>
+            <pesel>71091456340</pesel>
+            <dowod>
+                <seria>DD</seria>
+                <nr_serii>678844</nr_serii>  
+            </dowod>       
+       </poszukujacy>
+    </tabela_p>
+    <termin_umowy>
+       <termin_zawarcia>2014-10-01 </termin_zawarcia>
+       <termin_zakonczenia>2014-12-31 </termin_zakonczenia>   
+    </termin_umowy>
+    <zobowiazanie>Poszukujący zobowiązuje się iż ewentualnego zakupu którejś z poniższych nieruchomości dokona za pośrednictwem agencji SCN.</zobowiazanie>
+    <tabela_d>
+        <lp nr="1">
+            <nieruchomosc>Dom wolnostojący pow. 240m, działka 1000m</nieruchomosc>
+            <adres_nieruchomosci>Podkowa Leśna ul. Kwiatowa 23</adres_nieruchomosci>
+        </lp>
+        <lp nr="2">
+             <nieruchomosc>Segment pow. 200m, działka 560m</nieruchomosc>
+             <adres_nieruchomosci>Milanówek ul. Spokojna 7</adres_nieruchomosci>
+        </lp>
+        <lp nr="3">
+            <nieruchomosc>Dom wolnostojący pow. 260m, działka 3500m</nieruchomosc>
+            <adres_nieruchomosci>Brwinów ul. Cicha 12</adres_nieruchomosci>
+        </lp>
+    </tabela_d>
+    <prowizja>
+        <procent>3</procent>
+    </prowizja>
+    <oswiadczenie>Poszukujący oświadcza jednocześnie iż jeżeli dokona transakcji dotyczącej którejś z powyższych nieruchomości z pominięciem agencji SCN, wypłaci agencji należne wynagrodzenie z tytułu prowizji.</oswiadczenie>
+    <agent_prowadzacy>
+        <imie>Agnieszka</imie>
+        <nazwisko>Kownacka</nazwisko>
+        <telefon>22 755-24-76</telefon>
+   </agent_prowadzacy>
+   <podpis>
+        <agencja>
+            <imie>Agnieszka</imie>
+            <nazwisko>Kownacka</nazwisko> 
+        </agencja>
+        <kupujacy>
+            <imie>Mirosław</imie>
+            <nazwisko>Strzaliński</nazwisko> 
+        </kupujacy>
+   </podpis>
+
+</dokument_agencji>

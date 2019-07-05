@@ -1,0 +1,88 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="karta_samochodu">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="dokument">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                        <xsd:element type="xsd:string" name="miejscowosc"/>
+                            <xsd:element name="data">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element type="xsd:short" name="rok"/>
+                                        <xsd:element type="xsd:byte" name="miesiac"/>
+                                        <xsd:element type="xsd:byte" name="dzien"/>
+                                        <xsd:element type="xsd:string" name="godz"/>
+                                    </xsd:sequence>
+                                <xsd:attribute type="xsd:string" name="czynnosc"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="dane_pojazdu">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element type="xsd:string" name="nr_katalogowy"/>
+                            <xsd:element type="xsd:string" name="marka"/>
+                            <xsd:element type="xsd:string" name="model"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="dane_uzytkownika">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element type="xsd:string" name="id"/>
+                            <xsd:element type="xsd:string" name="imie"/>
+                            <xsd:element type="xsd:string" name="nazwisko"/>
+                            <xsd:element type="xsd:string" name="stanowisko"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="zestawienie_wyjazdow">
+                    <xsd:complexType>
+                        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                            <xsd:element name="pozycja">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                    <xsd:element type="xsd:byte" name="nr"/>
+                                    <xsd:element type="xsd:byte" name="przebieg"/>
+                                    <xsd:element name="miejsce_wyjazdu">
+                                        <xsd:complexType>
+                                            <xsd:sequence>
+                                                <xsd:element type="xsd:string" name="miasto"/>
+                                                <xsd:element type="xsd:string" name="oddzial"/>
+                                            </xsd:sequence>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                    <xsd:element type="xsd:string" name="cel"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:choice>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="data" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element type="xsd:short" name="rok"/>
+                            <xsd:element type="xsd:byte" name="miesiac"/>
+                            <xsd:element type="xsd:byte" name="dzien"/>
+                            <xsd:element type="xsd:string" name="godz"/>
+                        </xsd:sequence>
+                    <xsd:attribute type="xsd:string" name="czynnosc"/>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="odpowiedzialny" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                        <xsd:element type="xsd:string" name="imie"/>
+                        <xsd:element type="xsd:string" name="nazwisko"/>
+                        </xsd:sequence>
+                    <xsd:attribute type="xsd:string" name="czynnosc"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

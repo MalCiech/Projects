@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="apply.xsl"?>
+
+<wyjazdy>
+
+	<samochod>
+		<marka>Mercedes</marka>
+		<model>W123</model>
+		<numer>N107</numer>
+	</samochod>
+	
+	<kierowca>
+		<imie>Janusz</imie>
+		<nazwisko>Kamiński</nazwisko>
+		<numer_sluzbowy>12S56</numer_sluzbowy>
+	</kierowca>
+	
+	<pozycje>
+		<pozycja nr="1">
+				<cel>Usunięcie awarii sieci</cel>
+				<miejsce>Łomianki</miejsce>
+				<odleglosc>25</odleglosc>
+		</pozycja>
+		<pozycja nr="2">
+				<cel>Wymiana tonera</cel>
+				<miejsce>Kobyłka</miejsce>
+				<odleglosc>30</odleglosc>
+		</pozycja>
+		<pozycja nr="3">
+				<cel>Naprawa serwera</cel>
+				<miejsce>Milanówek</miejsce>
+				<odleglosc>21</odleglosc>
+		</pozycja>
+	</pozycje>
+
+</wyjazdy>
+	

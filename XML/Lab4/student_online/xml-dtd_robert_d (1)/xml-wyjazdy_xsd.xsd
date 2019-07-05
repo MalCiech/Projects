@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:complexType name="dane_dokumentu">
+    <xsd:sequence>
+        <xsd:element name="miejscowosc">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Warszawa"/>
+                    <xsd:enumeration value="Gdańsk"/>
+                    <xsd:enumeration value="Wrocław"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="dzien" type="xsd:date"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="dane_samochodu">
+    <xsd:sequence>
+        <xsd:element name="nr_katalogowy">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[A-Z][A-Z] \d{4}"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="marka" type="xsd:string" default="Opel"/>
+        <xsd:element name="model" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="dane_uzytkownika">
+    <xsd:sequence>
+        <xsd:element name="identyfikator">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:pattern value="[A-Z][A-Z] \d{4}/[A-Z]"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="imie" type="xsd:string" maxOccurs="2"/>
+        <xsd:element name="nazwisko" type="xsd:string"/>
+        <xsd:element name="stanowisko" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+
+
+<xsd:complexType name="zestawienie_wyjazdow">
+    <xsd:sequence>
+        <xsd:element name="lp">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="przebieg" type="xsd:integer"/>
+                    <xsd:element name="miejsce_wyjazdu" type="xsd:string"/>
+                    <xsd:element name="cel" type="xsd:string"/>
+                </xsd:sequence>
+            <xsd:attribute name="nr" type="xsd:integer"/>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="podpis">
+    <xsd:sequence>
+            <xsd:element name="imie" type="xsd:string" maxOccurs="2"/>
+            <xsd:element name="nazwisko" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:group name="pobrania">
+    <xsd:sequence>
+        <xsd:element name="dzien" type="xsd:date"/>
+        <xsd:element name="godzina" type="xsd:time"/>
+    </xsd:sequence>
+</xsd:group>
+<xsd:group name="zdania">
+    <xsd:sequence>
+        <xsd:element name="dzien" type="xsd:date"/>
+        <xsd:element name="godzina" type="xsd:time"/>
+    </xsd:sequence>
+</xsd:group>
+<xsd:complexType name="data">
+        <xsd:sequence>
+            <xsd:group ref="pobrania"/>
+            <xsd:group ref="zdania"/>
+        </xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:group name="wydal">            
+    <xsd:sequence>
+        <xsd:element name="imie" type="xsd:string" maxOccurs="2"/>
+        <xsd:element name="nazwisko" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:group>
+<xsd:group name="odebral">
+    <xsd:sequence>
+        <xsd:element name="imie" type="xsd:string" maxOccurs="2"/>
+        <xsd:element name="nazwisko" type="xsd:string"/>
+    </xsd:sequence>
+</xsd:group>
+<xsd:complexType name="samochod">
+        <xsd:sequence>
+            <xsd:group ref="wydal"/>
+            <xsd:group ref="odebral"/>
+        </xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="dokument_wyjazdy">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="dane_dokumentu" type="dane_dokumentu"/>
+            <xsd:element name="karta" type="karta"/>
+    </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

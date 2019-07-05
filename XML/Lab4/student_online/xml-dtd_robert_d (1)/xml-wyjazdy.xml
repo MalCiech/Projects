@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<dokument_wyjazdy nr="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="xml-wyjazdy_xsd.xsd">
+	<dane_dokumentu>
+		<miejscowosc>Warszawa</miejscowosc>
+		<dzien>2013-03-10</dzien>
+	</dane_dokumentu>
+	
+	<dane_samochodu>
+		<nr_katalogowy>PG 2044</nr_katalogowy>
+		<marka>Opel</marka>
+		<model>Vectra</model>
+	</dane_samochodu>
+	
+	<dane_uzytkownika>
+		<identyfikator>PG 2014/I</identyfikator>
+		<imie>Karol</imie>
+		<nazwisko>Kraszewki</nazwisko>
+		<stanowisko>Specjalista - dział informatyki</stanowisko>
+	</dane_uzytkownika>
+	
+	<zestawienie_wyjazdow>
+		<lp nr="1">
+			<przebieg>50</przebieg>
+			<miejsce_wyjazdu>Warszawa - Stegny (Centrala)</miejsce_wyjazdu>
+			<cel>Usunięcie awarii sieci</cel>
+		</lp>
+		<lp nr="2">
+			<przebieg>100</przebieg>
+			<miejsce_wyjazdu>Grodzisk Maz. (Oddział terenowy)</miejsce_wyjazdu>
+			<cel>Konserwacja serwera</cel>
+		</lp>
+		<lp nr="3">
+			<przebieg>80</przebieg>
+			<miejsce_wyjazdu>Warszawa - Bielany (Oddział terenowy)</miejsce_wyjazdu>
+			<cel>Instalacja oprogramowania</cel>
+		</lp>
+                
+	</zestawienie_wyjazdow>
+	
+	<data>
+		<pobrania>
+			<dzien>2013-03-08</dzien>
+			<godzina>09:30</godzina>
+		</pobrania>
+		<zdania>
+			<dzien>2013-03-08</dzien>
+			<godzina>18:20</godzina>
+		</zdania>
+	</data>
+	
+        <samochod>
+            <wydal>
+                <imie>Andrzej</imie>
+                <nazwisko>Stefaniak</nazwisko>
+            </wydal>
+	
+            <odebral>
+                <imie>Hubert</imie>
+                <nazwisko>Kamionek</nazwisko>
+            </odebral>
+        </samochod>
+        
+	<podpis>
+		<imie>Karol</imie>
+		<nazwisko>Kraszewski</nazwisko>
+	</podpis>
+	
+</dokument_wyjazdy>

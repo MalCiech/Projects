@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+
+<!DOCTYPE cv [
+    <!ELEMENT cv (imie, nazwisko, data_ur, adres, wyksztalcenie)>
+        <!ELEMENT imie (#PCDATA)>
+        <!ELEMENT nazwisko (#PCDATA)>
+        <!ELEMENT data_ur (#PCDATA)>
+        <!ELEMENT adres (ulica, nr, kod, miejscowosc?)>
+            <!ELEMENT ulica (#PCDATA)>
+            <!ELEMENT nr (#PCDATA)>
+            <!ELEMENT kod (#PCDATA)>
+            <!ELEMENT miejscowosc (#PCDATA)>
+        <!ELEMENT wyksztalcenie (szkola+)>
+            <!ELEMENT szkola (nazwa, adres, od, do)>
+                <!ATTLIST szkola id CDATA #REQUIRED>
+                <!ELEMENT nazwa (#PCDATA)>
+                <!ELEMENT od (#PCDATA)>
+                <!ELEMENT do (#PCDATA)>
+]>
+
+<cv>
+    <imie>Pawel</imie>
+    <nazwisko>Zawadzki</nazwisko>
+    <data_ur>01.01.1999</data_ur>
+	
+    <adres>
+        <ulica>Newelska</ulica>
+        <nr>6</nr>
+        <kod>00-123</kod>
+        <miejscowosc>Warszawa</miejscowosc>
+    </adres>
+	
+    <wyksztalcenie>
+        <szkola id="1">
+            <nazwa>A</nazwa>
+            <adres>
+                <ulica>Puławska</ulica>
+                <nr>1</nr>
+                <kod>01-123</kod>
+            </adres>
+            <od>01.01.1999</od>
+            <do>01.02.1999</do>
+        </szkola>
+        <szkola id="2">
+            <nazwa>B</nazwa>
+            <adres>
+                <ulica>Niepodległości</ulica>
+                <nr>2</nr>
+                <kod>03-123</kod>
+            </adres>
+            <od>01.02.1999</od>
+            <do>01.03.1999</do>
+        </szkola>
+    </wyksztalcenie>
+	
+</cv>

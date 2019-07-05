@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE dokument_wyjazdy [
+
+<!ELEMENT dokument_wyjazdy (dane_dokumentu,karta)>
+    <!ELEMENT dane_dokumentu (miejscowosc,data+)>
+        <!ELEMENT miejscowosc (#PCDATA)>
+        <!ELEMENT data (#PCDATA)>
+    <!ELEMENT karta (dane_samochodu,dane_uzytkownika,zestawienie_wyjazdow,data_i_godzina_pobrania_auta,data_i_godzina_zwrotu_auta,samochod_wydal,samochod_odebral, podpis)>
+        <!ELEMENT dane_samochodu ( numer_katalogowy,marka,model)>
+            <!ELEMENT numer_katalogowy (#PCDATA)>
+            <!ELEMENT marka (#PCDATA)>
+            <!ELEMENT model (#PCDATA)>
+        <!ELEMENT dane_uzytkownika (identyfikator,imie+,nazwisko+, stanowisko)>
+            <!ELEMENT identyfikator (#PCDATA)>
+            <!ELEMENT imie (#PCDATA)>
+            <!ELEMENT nazwisko (#PCDATA)>
+            <!ELEMENT stanowisko (#PCDATA)>
+        <!ELEMENT zestawienie_wyjazdow (lp+)>
+            <!ELEMENT lp (przebieg,miejsce_wyjazdu,cel_podrozy)>
+                 <!ATTLIST lp nr CDATA #REQUIRED>
+                 <!ELEMENT przebieg (#PCDATA)>
+                 <!ELEMENT miejsce_wyjazdu (#PCDATA)>
+                 <!ELEMENT cel_podrozy (#PCDATA)>
+        <!ELEMENT data_i_godzina_pobrania_auta (data,godzina+)>    
+            <!ELEMENT godzina (#PCDATA)>
+        <!ELEMENT data_i_godzina_zwrotu_auta (data,godzina)>
+        <!ELEMENT samochod_wydal (imie,nazwisko)>
+        <!ELEMENT samochod_odebral (imie,nazwisko)>
+        <!ELEMENT podpis (imie,nazwisko)>
+]>
+
+<dokument_wyjazdy>
+    <dane_dokumentu>
+        <miejscowosc>Warszawa</miejscowosc>
+        <data>2016-03-10</data>
+    </dane_dokumentu>
+    <karta>
+        <dane_samochodu>
+            <numer_katalogowy>PG 2044</numer_katalogowy>
+            <marka>Opel</marka>
+            <model>Vectra</model>
+        </dane_samochodu>
+        <dane_uzytkownika>
+            <identyfikator>PG 2014/I</identyfikator>
+            <imie>Karol</imie>
+            <nazwisko>Kraszewki</nazwisko>
+            <stanowisko>Specjalista - działu informatyki</stanowisko>
+        </dane_uzytkownika>
+        <zestawienie_wyjazdow>
+            <lp nr="1">
+                <przebieg>50</przebieg>
+                <miejsce_wyjazdu>Warszawa - Stegny (Centrala)</miejsce_wyjazdu>
+                <cel_podrozy>Usunięcie awarii sieci</cel_podrozy>
+            </lp>
+            <lp nr="2">
+                <przebieg>100</przebieg>
+                <miejsce_wyjazdu>Grodzisk Maz. (Oddział terenowy)</miejsce_wyjazdu>
+                <cel_podrozy>Konserwacja serwera</cel_podrozy>
+            </lp>
+            <lp nr="3">
+                <przebieg>80</przebieg>
+                <miejsce_wyjazdu>Warszawa - Bielany (Oddział terenowy)</miejsce_wyjazdu>
+                <cel_podrozy>Instalacja oprogramowania</cel_podrozy>
+            </lp>
+        </zestawienie_wyjazdow>
+        <data_i_godzina_pobrania_auta>
+                <data>2014-03-08</data>
+                <godzina>09:30</godzina>
+        </data_i_godzina_pobrania_auta>
+        <data_i_godzina_zwrotu_auta>
+                <data>2014-03-08</data>
+                <godzina>18:20</godzina>
+         </data_i_godzina_zwrotu_auta>
+        <samochod_wydal>
+            <imie>Andrzej</imie>
+            <nazwisko>Stefaniak</nazwisko>
+        </samochod_wydal>
+        <samochod_odebral>
+            <imie>Hubert</imie>
+            <nazwisko>Kamionek</nazwisko>
+        </samochod_odebral>
+        <podpis>
+            <imie>Karol</imie>
+            <nazwisko>Kraszewski</nazwisko>
+        </podpis>
+    </karta>
+</dokument_wyjazdy>

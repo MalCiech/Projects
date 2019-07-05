@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+<dane_osobowe>
+	<imie> Anna </imie>
+	<nazwisko> Kulesza </nazwisko>
+	<data_urodzenia> 1985-02-24 </data_urodzenia>
+	<narodowosc>Polska</narodowosc>
+	<adres>
+			<ulica>Bobrowiecka</ulica>
+			<nr_domu type="numer" value="20"/>
+			<kod_pocztowy type="k_pocztowy" value="01-223"/>
+			<miejscowosc>Warszawa</miejscowosc>
+	</adres>
+	<dane_kontaktowe>
+			<telefon> 902 999 999 </telefon>
+			<mail> anna.kulesza@wp.pl </mail>
+	</dane_kontaktowe>
+</dane_osobowe>
+<wyksztalcenie>
+	<szkola_wyzsza1 type="pierwsza_uczelnia">
+		<nazwa_uczelni>Politechnika Warszawska</nazwa_uczelni>
+		<kierunek>Ekonomia</kierunek>
+		<stopien_naukowy> licencjat </stopien_naukowy>
+	  <data_od>2008-09-01> </data_od>
+		<data_do>2011-06-24</data_do>
+	</szkola_wyzsza1>
+	<szkola_wyzsza2 type="druga_uczelnia">
+		<nazwa_uczelni>WIT</nazwa_uczelni>
+		<kierunek>Informatyka</kierunek>
+		<stopien_naukowy> inżynier </stopien_naukowy>
+		<data_od>2016-09-01 </data_od>
+		<data_do>obecnie</data_do>
+	</szkola_wyzsza2>
+</wyksztalcenie>
+<doswiadczenie_zawodowe>
+<praca1 type="pracodawca1">
+	<nazwa>CIECH S.A.</nazwa>
+	<stanowisko>Asystent ds. jakości</stanowisko>
+	<data_od>2010-04-01</data_od>
+	<data_do>2011-04-01</data_do>
+</praca1>
+<praca2 type="pracodawca2">
+	<nazwa>PKP Cargo S.</nazwa>
+	<stanowisko>Specjalista ds.jakości</stanowisko>
+	<data_od>2011-05-01</data_od>
+	<data_do>2013-04-01</data_do>
+</praca2>
+<praca3 type="pracodawca3">
+	<nazwa>PKN Orlen S.A</nazwa>
+	<stanowisko>Kierownik ds.jakości</stanowisko>
+	<data_od>2013-05-01</data_od>
+	<data_do>obecnie</data_do>
+</praca3>
+</doswiadczenie_zawodowe>
+<szkolenia_certyfikaty>
+<certyfikat1 type="c_jezykowy" value="Certyfikat z języka angielskiego na poziomie FCE" data_ukonczenia="03/2013"/>
+<certyfikat2 type="szkolenie_miekkie" value="Zarzadzanie stresem" data_ukonczenia="03/2014"/>
+</szkolenia_certyfikaty>
+	<zainteresowania>
+		<hobby1>Muzyka</hobby1>
+		<hobby2>Filmy</hobby2>
+		<hobby3>Technologie</hobby3>
+	</zainteresowania>
+	<klauzula>
+	Klauzula poufności
+	</klauzula>
+</cv>

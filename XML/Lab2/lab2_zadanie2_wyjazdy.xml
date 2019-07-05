@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dokument_wyjazdy>
+    <dane_dokumentu>
+        <miejcowosc>Warszawa</miejcowosc>
+        <data>2016-03-10</data>
+    </dane_dokumentu>
+    <karta>
+        <dane_samochodu>
+            <numer_katalogowy>PG 2044</numer_katalogowy>
+            <marka>Opel</marka>
+            <model>Vectra</model>
+        </dane_samochodu>
+        <dane_uzytkownika>
+            <identyfikator>PG 2014/I</identyfikator>
+            <imie>Karol</imie>
+            <nazwiko>Kraszewki</nazwiko>
+            <stanowisko>Specjalista - działu informatyki</stanowisko>
+        </dane_uzytkownika>
+        <zestawienie_wyjazdow>
+            <lp nr="1">
+                <przebieg>50</przebieg>
+                <miejsce_wyjazdu>Warszawa - Stegny (Centrala)</miejsce_wyjazdu>
+                <cel_podrozy>Usunięcie awarii sieci</cel_podrozy>
+            </lp>
+            <lp nr="2">
+                <przebieg>100</przebieg>
+                <miejsce_wyjazdu>Grodzisk Maz. (Oddział terenowy)</miejsce_wyjazdu>
+                <cel_podrozy>Konserwacja serwera</cel_podrozy>
+            </lp>
+            <lp nr="3">
+                <przebieg>80</przebieg>
+                <miejsce_wyjazdu>Warszawa - Bielany (Oddział terenowy)</miejsce_wyjazdu>
+                <cel_podrozy>Instalacja oprogramowania</cel_podrozy>
+            </lp>
+        </zestawienie_wyjazdow>
+        <data_i_godzina_pobrania_auta>
+                <data>2014-03-08</data>
+                <godzina>09:30</godzina>
+         </data_i_godzina_pobrania_auta>
+         <data_i_godzina_zwrotu_auta>
+                <data>2014-03-08</data>
+                <godzina>18:20</godzina>
+         </data_i_godzina_zwrotu_auta>
+        <samochod_wydal>
+            <imie>Andrzej</imie>
+            <nazwisko>Stefaniak</nazwisko>
+        </samochod_wydal>
+        <samochod_odebral>
+            <imie>Hubert</imie>
+            <nazwisko>Kamionek</nazwisko>
+        </samochod_odebral>
+        <podpis>
+            <imie>Karol</imie>
+            <nazwisko>Kraszewski</nazwisko>
+        </podpis>
+    </karta>
+</dokument_wyjazdy>

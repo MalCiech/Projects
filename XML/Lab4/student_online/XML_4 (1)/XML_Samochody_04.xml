@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+								
+<karta_samochodu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="XML_Samochody_04.xsd">
+<dokument>
+ <miejscowosc>Warszawa</miejscowosc>
+  <data czynnosc="dokumentu">
+    <rok>2013</rok>
+    <miesiac>10</miesiac>
+    <dzien>18</dzien>
+    <godz></godz>
+  </data>
+</dokument>
+
+<dane_pojazdu>
+  <nr_katalogowy>PG 2044</nr_katalogowy>
+  <marka>Opel</marka>
+  <model>Astra</model>
+</dane_pojazdu>
+
+<dane_uzytkownika>
+  <id>PG 2014/I</id>
+  <imie>Karol</imie>
+  <nazwisko>Kraszewsko</nazwisko>
+  <stanowisko>Specjalista - Dzial Informatyki</stanowisko>
+</dane_uzytkownika>
+
+<zestawienie_wyjazdow>
+	<pozycja>
+	  <nr>1</nr>
+	  <przebieg>50</przebieg>
+	  <miejsce_wyjazdu>
+		<miasto>Warszawa</miasto>
+		<oddzial>Stegny (Centrala)</oddzial>
+	  </miejsce_wyjazdu>
+	  <cel>Usuniecie awarii sieci</cel>
+	</pozycja>
+	
+	<pozycja>
+	  <nr>2</nr>
+	  <przebieg>100</przebieg>
+	  <miejsce_wyjazdu>
+		<miasto>Grodzisk Maz.</miasto>
+		<oddzial>(O/terenowy)</oddzial>
+	  </miejsce_wyjazdu>
+	  <cel>Konserwacja serwera</cel>
+	</pozycja>
+	
+	<pozycja>
+	  <nr>3</nr>
+	  <przebieg>80</przebieg>
+	  <miejsce_wyjazdu>
+		<miasto>Warszawa</miasto>
+		<oddzial>Bielany (O/terenowy)</oddzial>
+	  </miejsce_wyjazdu>
+	  <cel>Instalacja oprogramowania</cel>
+	</pozycja>
+		
+</zestawienie_wyjazdow>
+
+<data czynnosc="pobranie">
+        <rok>2013</rok>
+	<miesiac>10</miesiac>
+	<dzien>18</dzien>
+	<godz>9:30</godz>
+</data>
+
+<data czynnosc="zwrot">
+        <rok>2013</rok>
+	<miesiac>10</miesiac>
+	<dzien>18</dzien>
+	<godz>19:00</godz>
+</data>
+
+<odpowiedzialny czynnosc="wydal">
+	<imie>Andrzej</imie>
+	<nazwisko>Stefaniak</nazwisko>
+</odpowiedzialny>
+
+<odpowiedzialny czynnosc="odebral">
+	<imie>Hubert</imie>
+	<nazwisko>Kamionek</nazwisko>
+</odpowiedzialny>
+
+<odpowiedzialny czynnosc="podpis">
+	<imie>Karol</imie>
+	<nazwisko>Kraszewski</nazwisko>
+</odpowiedzialny>
+
+</karta_samochodu>

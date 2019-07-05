@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dokument_agencji">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="umowa">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element type="xs:integer" name="numer"/> 
+                    <xs:element name="zawarcie_umowy">
+                     <xs:complexType>
+                        <xs:sequence>
+                           <xs:element type="xs:string" name="miejscowosc"/>
+                           <xs:element type="xs:date" name="data"/> 
+                        </xs:sequence>
+                     </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="tabela">
+              <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="agencja">
+                       <xs:complexType>
+                         <xs:sequence>
+                          <xs:element type="xs:string" name="nazwa_agencji"/>
+                           <xs:element name="adres">
+                               <xs:complexType>
+                                   <xs:sequence>
+                                       <xs:element type="xs:string" name="miejscowosc"/>
+                                       <xs:element type="xs:string" name="ulica"/>
+                                       <xs:element type="xs:string" name="kod"/>
+                                       <xs:element type="xs:integer" name="nr_domu"/> 
+                                   </xs:sequence>
+                               </xs:complexType>
+                           </xs:element>
+                           <xs:element type="xs:string" name="nip"/>
+                           <xs:element type="xs:integer" name="regon"/>
+                         </xs:sequence>
+                       </xs:complexType>
+                    </xs:element>
+                    <xs:element name="poszukujacy">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="dane_osobowe">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="imie"/>
+                                            <xs:element type="xs:string" name="nazwisko"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="adres">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="miejscowosc"/>
+                                            <xs:element type="xs:string" name="ulica"/>
+                                            <xs:element type="xs:string" name="kod"/>
+                                            <xs:element type="xs:integer" name="nr_domu"/>
+                                            <xs:element type="xs:integer" name="nr_lokalu"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="pesel"/>
+                                <xs:element name="dowod">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element type="xs:string" name="seria"/>
+                                            <xs:element type="xs:integer" name="nr_serii"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>             
+            <xs:element name="termin_umowy">
+                <xs:complexType>
+                   <xs:sequence>
+                    <xs:element type="xs:date" name="termin_zawarcia"/>
+                    <xs:element type="xs:date" name="termin_zakonczenia"/>   
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element type="xs:string" name="zobowiazanie"/>      
+            <xs:element name="tabela">
+                <xs:complexType>
+                     <xs:sequence>
+                        <xs:element name="lp" maxOccurs="unbounded" minOccurs="1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nieruchomosc">    
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element type="xs:string" name="typ"/>
+                                                <xs:element type="xs:integer" name="powierzchnia"/>
+                                                <xs:element type="xs:integer" name="dzialka"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                        <xs:element name="adres">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element type="xs:string" name="miejscowosc"/>
+                                    <xs:element type="xs:string" name="ulica"/>
+                                    <xs:element type="xs:integer" name="numer"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                                </xs:sequence>
+                        <xs:attribute type="xs:integer" name="nr" use="optional"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:element>
+        <xs:element name="prowizja">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:integer" name="procent"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="oswiadczenie"/> 
+        <xs:element name="agent_prowadzacy">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="imie"/>
+              <xs:element type="xs:string" name="nazwisko"/>
+              <xs:element type="xs:integer" name="telefon"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="podpis">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="agencja">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="imie"/>
+                            <xs:element type="xs:string" name="nazwisko"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="kupujacy">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="imie"/>
+                            <xs:element type="xs:string" name="nazwisko"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

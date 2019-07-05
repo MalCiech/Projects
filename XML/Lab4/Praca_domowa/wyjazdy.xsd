@@ -1,0 +1,97 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="dokument_wyjazdy">
+       <xs:complexType>
+        <xs:sequence>
+            <xs:element name="dane_dokumentu">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element type="xs:string" name="miejcowosc"/>
+                        <xs:element type="xs:date" name="data"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="karta">
+                 <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="dane_samochodu">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="numer_katalogowy"/>
+                                <xs:element type="xs:string" name="marka"/>
+                                <xs:element type="xs:string" name="model"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>  
+                        <xs:element name="dane_uzytkownika">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="identyfikator"/>
+                                <xs:element type="xs:string" name="imie"/>
+                                <xs:element type="xs:string" name="nazwiko"/>
+                                <xs:element type="xs:string" name="stanowisko"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="zestawienie_wyjazdow">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="lp" maxOccurs="unbounded" minOccurs="1">
+                                  <xs:complexType>
+                                   <xs:sequence>
+                                      <xs:element type="xs:integer" name="przebieg"/>
+                                      <xs:element type="xs:string" name="miejsce_wyjazdu"/>
+                                      <xs:element type="xs:string" name="cel_podrozy"/>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:integer" name="nr" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>       
+                                 <xs:element name="data_i_godzina_pobrania_auta">
+                                   <xs:complexType>
+                                     <xs:sequence>
+                                       <xs:element type="xs:date" name="data"/>
+                                       <xs:element type="xs:time" name="godzina"/>
+                                     </xs:sequence>
+                                   </xs:complexType>
+                                 </xs:element>
+                                 <xs:element name="data_i_godzina_zwrotu_auta">
+                                   <xs:complexType>
+                                     <xs:sequence>
+                                       <xs:element type="xs:date" name="data"/>
+                                       <xs:element type="xs:time" name="godzina"/>
+                                     </xs:sequence>
+                                   </xs:complexType>
+                                 </xs:element> 
+                        <xs:element name="samochod_wydal">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="imie"/>
+                                <xs:element type="xs:string" name="nazwisko"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element> 
+                        <xs:element name="samochod_odebral">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="imie"/>
+                                <xs:element type="xs:string" name="nazwisko"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>  
+                        <xs:element name="podpis">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="imie"/>
+                                <xs:element type="xs:string" name="nazwisko"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>              
+                    </xs:sequence>
+                </xs:complexType>  
+            </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+</xs:schema>

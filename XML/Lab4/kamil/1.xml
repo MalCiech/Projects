@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Kamil Janikowski 16597 -->
+
+<karta_pojazdu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="1.xsd">
+    <data_utworzenia>
+        <miejcowosc>Warszawa</miejcowosc>
+        <data>2016-03-10</data>
+    </data_utworzenia>
+    <dane_samochodu>
+        <nr_katalogowy>PG2044</nr_katalogowy>
+        <marka>Opel</marka>
+        <model>Vectra</model>
+    </dane_samochodu>
+    <dane_uztkownika>
+        <identyfikator>PG2014/I</identyfikator>
+        <imie>Karol</imie>
+        <nazwiko>Kraszewki</nazwiko>
+        <stanowisko>Specjalista - działu informatyki</stanowisko>
+    </dane_uztkownika>
+    <lista_wyjazdow>
+        <pozycja nr="1">
+            <przebieg_km>50</przebieg_km>
+            <miejsce_wyjazdu>Warszawa - Stegny (Centrala)</miejsce_wyjazdu>
+            <cel_podrozy>Usunięcie awarii sieci</cel_podrozy>
+        </pozycja>
+        <pozycja nr="2">
+            <przebieg_km>100</przebieg_km>
+            <miejsce_wyjazdu>Grodzisk Maz. (Oddział terenowy)</miejsce_wyjazdu>
+            <cel_podrozy>Konserwacja serwera</cel_podrozy>
+        </pozycja>
+        <pozycja nr="3">
+            <przebieg_km>80</przebieg_km>
+            <miejsce_wyjazdu>Warszawa - Bielany (Oddział terenowy)</miejsce_wyjazdu>
+            <cel_podrozy>Instalacja oprogramowania</cel_podrozy>
+        </pozycja>
+    </lista_wyjazdow>
+    <data_uzytkowania>
+        <pobrania_auta>
+            <dzien>2014-03-08</dzien>
+            <godzina>09:30:00</godzina>
+        </pobrania_auta>
+        <zdania_auta>
+            <dzien>2014-03-08</dzien>
+            <godzina>18:20:00</godzina>
+        </zdania_auta>
+    </data_uzytkowania>
+    <samochod_wydal>
+        <imie>Andrzej</imie>
+        <nazwisko>Stefaniak</nazwisko>
+    </samochod_wydal>
+    <samochod_odebral>
+        <imie>Hubert</imie>
+        <nazwisko>Kamionek</nazwisko>
+    </samochod_odebral>
+</karta_pojazdu>

@@ -1,0 +1,32 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+   <xs:element name="dokument_wyjazdy">
+      <xs:complexType>
+        <xs:sequence>
+            <xs:element name="dane dokumentu">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element type="xs:string" name="miejcowosc"/>
+                        <xs:element type="xs:date" name="data"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="karta">
+                 <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="dane_samochodu">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="nr_katalogowy"/>
+                                <xs:element type="xs:string" name="marka"/>
+                                <xs:element type="xs:string" name="model"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>                     
+                    </xs:sequence>
+                </xs:complexType>  
+            </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element> 
+</xsd:schema>
